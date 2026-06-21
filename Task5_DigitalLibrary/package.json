@@ -1,0 +1,21 @@
+{
+  "name": "digital-library-management",
+  "version": "1.0.0",
+  "description": "Digital Library Management System - OIBSIP Task 5",
+  "main": "NaziyaSyed_Task5.js",
+  "scripts": {
+    "start": "node NaziyaSyed_Task5.js",
+    "dev": "nodemon NaziyaSyed_Task5.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "author": "Syed Naziya",
+  "license": "ISC"
+}

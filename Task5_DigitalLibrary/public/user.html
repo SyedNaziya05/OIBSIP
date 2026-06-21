@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Portal - Digital Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h1>📚 Digital Library</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="user.html">User Portal</a>
+      <a href="admin.html">Admin Portal</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <h3>🔍 Search & Browse Books</h3>
+      <input type="text" id="searchInput" placeholder="Search by title, author, or ISBN...">
+      <input type="text" id="categoryInput" placeholder="Filter by category (optional)">
+      <button class="btn" onclick="loadBooks()">Search</button>
+    </div>
+
+    <div class="card">
+      <h3>📖 Available Books</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Category</th>
+            <th>Available</th>
+          </tr>
+        </thead>
+        <tbody id="booksTableBody"></tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>📋 View My Borrowing History</h3>
+      <label>Enter your Member ID (given by the admin when you joined)</label>
+      <input type="text" id="memberIdInput" placeholder="Member ID">
+      <button class="btn" onclick="loadHistory()">View History</button>
+      <table>
+        <thead>
+          <tr>
+            <th>Book</th>
+            <th>Issue Date</th>
+            <th>Due Date</th>
+            <th>Return Date</th>
+            <th>Fine</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="historyTableBody"></tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>✉️ Have a Query?</h3>
+      <p style="color:#94a3b8; margin-bottom: 0.8rem;">
+        Reach out to the library team directly via email for any issue or question.
+      </p>
+      <a class="btn" href="mailto:library.support@example.com?subject=Library%20Query">Email Library Support</a>
+    </div>
+  </div>
+
+  <script src="user.js"></script>
+</body>
+</html>
